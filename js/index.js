@@ -40,6 +40,11 @@ buttonLogin.addEventListener('click', function(e) {
         passwordHelp.style.color = "#6c757d"
         inputPassword.classList.remove("is-invalid")
     }
+    
+    //If email, password ok
+    if (checkEmail(email) === "ok" && checkPassword(password) === "ok") {
+        console.log("Submit")
+    }
 })
 
 
